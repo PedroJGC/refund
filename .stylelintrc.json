@@ -1,0 +1,23 @@
+{
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "color-no-invalid-hex": true,
+      "declaration-colon-space-after": "always",
+      "declaration-colon-space-before": "never",
+      "block-no-empty": true,
+      "unit-no-unknown": true,
+      "property-no-unknown": true,
+      "selector-pseudo-element-colon-notation": "single",
+      "max-empty-lines": 1,
+      "no-eol-whitespace": true,
+      "no-missing-end-of-source-newline": true,
+      "font-family-no-duplicate-names": true,
+      "font-family-no-missing-generic-family-keyword": true,
+      "selector-max-id": 0,
+      "selector-max-class": 3,
+      "selector-max-type": 2,
+      "selector-no-qualifying-type": [true, {
+        "ignore": ["attribute", "class", "id"]
+      }]
+    }
+  }
