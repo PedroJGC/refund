@@ -41,4 +41,18 @@ form.onsubmit = (event) => {
     amount: amount.value,
     created_at: new Date(),
   };
+
+  // Chama a função para adicionar um novo item na lista de gastos
+  expenseAdd(newExpense);
 };
+
+function expenseAdd(newExpense) {
+  try {
+    // Cria o elemento li para adicionar o item na lista (ul)
+    const expenseItem = document.createElement('li');
+    expenseItem.className = 'expense';
+  } catch (error) {
+    alert('Não foi possível atualizar a lista de gastos.');
+    console.error(error);
+  }
+}
